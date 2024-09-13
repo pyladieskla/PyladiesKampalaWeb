@@ -4,12 +4,12 @@
 ===========================*/
 :root {
   --font-family: "Inter", sans-serif;
-  --primary: #155bd5;
-  --primary-dark: #1c3ab6;
+  --primary: #DE1D3F;
+  --primary-dark:#F8C0C8 ;
   --primary-light: #e2f1ff;
   --accent: #00d4d7;
   --accent-dark: #00bac1;
-  --accent-light: #dff9f8;
+  --accent-light: #DBF9F4;
   --success: #13d527;
   --success-dark: #00ae11;
   --success-light: #eafbe7;
@@ -25,19 +25,19 @@
   --error: #e6185e;
   --error-dark: #bf1257;
   --error-light: #fce4eb;
-  --black: #1d1d1d;
-  --dark-1: #2d2d2d;
+  --black: #222E50;
+  --dark-1: #222E50;
   --dark-2: #4d4d4d;
   --dark-3: #6d6d6d;
   --gray-1: #8d8d8d;
   --gray-2: #adadad;
   --gray-3: #cdcdcd;
   --gray-4: #e0e0e0;
-  --light-1: #efefef;
+  --light-1: #DBF9F4;
   --light-2: #f5f5f5;
   --light-3: #fafafa;
   --white: #ffffff;
-  --gradient-1: linear-gradient(180deg, #155bd5 0%, #1c3ab6 100%);
+  --gradient-1: linear-gradient(180deg,  #F8C0C8 0%, #DE1D3F 100%);
   --gradient-2: linear-gradient(180deg, #155bd5 13.02%, #00d4d7 85.42%);
   --gradient-3: linear-gradient(180deg, #155bd5 0%, #8f15d5 100%);
   --gradient-4: linear-gradient(180deg, #155bd5 0%, #13d527 100%);
@@ -314,6 +314,7 @@ p {
   transition: all .3s ease-out 0s;
   border-radius: 5px;
 }
+
 
 .scroll-top:hover {
   -webkit-box-shadow: 0 1rem 3rem rgba(35, 38, 45, 0.15) !important;
@@ -911,7 +912,7 @@ p {
 .header-eight {
   position: relative;
   padding:160px 0 100px 0;
-  background: var(--primary);
+  background: var(--accent-light);
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .header-eight {
@@ -940,7 +941,7 @@ p {
 }
 .header-eight .header-content h1 {
   font-weight: 700;
-  color: var(--white);
+  color: #222E50;
   text-shadow: 0px 3px 8px #00000017;
   text-transform: capitalize;
 }
@@ -961,7 +962,7 @@ p {
 }
 .header-eight .header-content p {
   margin-top: 30px;
-  color: var(--white);
+  color: #222E50;
   opacity: 0.7;
 }
 .header-eight .button {
@@ -974,9 +975,9 @@ p {
   border: 1px solid transparent;
 }
 .header-eight .primary-btn:hover {
-  background-color: transparent;
+  background-color: var(--primary);
   color: var(--white);
-  border-color: var(--white);
+  border-color: var(--primary);
 }
 .header-eight .video-button {
   display: inline-flex;
