@@ -10,3 +10,6 @@ def website(request):
   template = loader.get_template('index.html')
   return HttpResponse(template.render())
 
+def website1(request):
+    return HttpResponse("Hello world!")
+
