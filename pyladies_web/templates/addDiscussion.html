@@ -1,0 +1,17 @@
+
+{% extends "base.html" %}
+
+{% block page_content %}
+
+{% load static %}
+
+<form action="{% url 'discussion_new' %}" method="POST"></form>
+    {% csrf_token %}
+    {{form.as_p}}
+    <input type="submit" class="btn btn-success" value="submit">
+</form>
+
+{%endfor%}
+
+
+{% endblock page_content %}
